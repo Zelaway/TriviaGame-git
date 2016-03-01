@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<title>Trivia Game</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class ="container">
+			<div class="row">
+				<div class="col-sm-2"> <p id = "correct">Correct Guesses: 0</p>
+					<p id="incorrect">Incorrect Guesses: 0</p> 
+					<p id="guesses">Guesses Left: 0 </p> </div>
+
+				<div class="col-sm-8">
+				 	<img id="wh" class="center-block"src="assets/images/whmain.jpg" class="img-rounded" alt="header" width="200" height="150"></div>
+
+				<div class="col-sm-2 text-left">
+					<p id="timer"> Timer:</p>
+					<p id="count"> _ _:_ _
+					
+				</div>
+			<div class ="row">
+				<div class="col-sm-12"></div>
+			</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4"> <p id = "correct"><img id="sc" src="assets/images/scmain.jpg" class="img-circle" alt="header" width="200" height="150"></div>
+
+				<div class="col-sm-4">
+					<p></p>
+					<p id="directions">Click on a Picture to Get a Trivia Question About that Branch of Government the question will Display Below.</p>
+				 	</div>
+
+				<div class="col-sm-4 text-right">
+					<img id="cm" src="assets/images/capitalmain.jpg" class="img-circle" alt="header" width="200" height="150"></div>
+			</div>
+			<div class ="row">
+				<div class="col-sm-12">
+					<div id ="question"><h1>Question Diplays Here!</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3"> </div>
+
+				<div class="col-sm-6">
+					<img id="mm" class="center-block"src="assets/images/monmain.jpg" class="img-rounded" alt="header" width="200" height="150">
+				 	</div>
+
+				<div class="col-sm-3"></div>
+			</div>			
+
+		</div>
+	</div>
+<script src="assets/javascript/app.js"></script>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+</body>
+</html>

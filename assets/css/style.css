@@ -1,0 +1,35 @@
+
+.wrapper{
+	position: fixed;
+}
+#container{
+	position: fixed;
+	top: 10%;
+	width: 940px;
+	padding: 0px 50px 0px 50px;
+	
+.col-sm-12{
+	top:20px;
+}
+
+#wh{
+	position: fixed;
+	alignment: center;
+}
+}
+.container{
+	
+	background-color: skyblue;
+	color: whitesmoke;
+
+}
+.jumbotron{
+	padding: 0px 50px 0px 50px;
+}
+#directions{
+	text-align: center;
+}
+
+#question{
+	text-align: center;
+}
