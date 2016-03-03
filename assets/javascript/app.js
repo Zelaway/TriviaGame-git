@@ -28,9 +28,36 @@ console.log(monQuestions.question11);
 
 //Functions
 //-------------------------------------------------------------------
-function choiceClick(){
+function startTimer(duration, display) { // function to add timer
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+}
+
+jQuery(function ($) {
+    var thirtySeconds = 60 / 2;
+        display = $("#count").html(thirtySeconds);
+    startTimer(thirtySeconds, display);
+});
+
+jQuery();
+
+
+function choiceClick(){ // funciton to ask random quesitons
 	$("#wh").click(function(){
 		console.log("This works!");
+		jQuery();
 		var randomQuestion = wHouseQuestions[Math.floor(Math.random() * wHouseQuestions.length)];
 		$("#question").html("<h3>" + randomQuestion + "</h3>");
 		console.log(randomQuestion);
@@ -51,15 +78,24 @@ function choiceClick(){
 	$("#sc").click(function(){
 		console.log("This works!");
 		var randomQuestion = sCourtQuestions[Math.floor(Math.random() * sCourtQuestions.length)];
-		$("#question").html(randomQuestion);
+		$("#question").html("<h3>" + randomQuestion + "</h3>");
 		});
 	$("#cm").click(function(){
 		console.log("This works!");
+		var randomQuestion = cQuestions[Math.floor(Math.random() * cQuestions.length)];
+		$("#question").html("<h3>" + randomQuestion + "</h3>");
 		});
 	$("#mm").click(function(){
 		console.log("This works!");
+		var randomQuestion = monQuestions[Math.floor(Math.random() * monQuestions.length)];
+	$("#question").html("<h3>" + randomQuestion + "</h3>");
 		});
-
+		
+}
+function radioButton(){
+	var radioInput = document.createElement('input');
+	radioInput.setAttribute('type', 'radio');
+	radioInput.setAttribute('name', name);
 }
 choiceClick();
 
